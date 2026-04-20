@@ -42,7 +42,11 @@ pip install -r requirements.txt
 
 ### Pre-trained XLSR
 
-We use the [XLSR-300M](https://docs.pytorch.org/audio/main/generated/torchaudio.pipelines.WAV2VEC2_XLSR_300M.html) model provided by `torchaudio` as our pre-trained backbone.
+We utilize the [XLSR-300M](https://docs.pytorch.org/audio/main/generated/torchaudio.pipelines.WAV2VEC2_XLSR_300M.html) model provided by `torchaudio` as our pre-trained backbone.
+
+## RawBoost
+To improve computational efficiency and ensure support for complex numbers, we optimized the implementation of the `SSI_additive_noise` function from the original RawBoost repository. You can find the detailed inline comments in our source code.
+
 
 ## Usage
 We provide a comprehensive bash script, `train_multiple.sh`, which contains the commands for training, testing, and scoring. Please refer to this file for execution details.
